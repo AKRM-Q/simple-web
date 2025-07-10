@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesone CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AQ</title>
+    
+  </head>
+  <body>
+<!-- -----------------------------------  Landing Page ----------------------------------- -->
+    <header>
+<!-- -----------------------------------  Navigation Bar ----------------------------------- -->
+      <img class="logo" src="images/LOGO.png" alt="not found" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">home</a></li>
+          <li><a href="#">category</a></li>
+          <li><a href="#">live</a></li>
+        </ul>
+      </nav>
+      <button class="btnLogin-popup">Log in</button>
+      
+      <!-- Search button -->
+      <form action="#">
+        <input
+          type="text"
+          name="Search"
+          placeholder="looking for..."
+          class="search"
+          />
+          <span class="s-btn"><ion-icon name="search"></ion-icon></span>
+    </header>
+
+    <body>
+        <!-- -----------------------------------  Movies ----------------------------------- -->
+    <section class="container">
+    <div class="slides">
+        <!-- --------------------------------1--------------------- -->
+        <div class="item" style="background-image: url(images/MOVIE\ 1.jpg);">
+            <div class="content">
+                <div class="name">john wick chapter</div>
+                <div class="dec">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</div>
+                <button class="btn" onclick="location.href='videos/Movie1.mp4' ">TRAILER</button>
+            </div>
+        </div>
+        <!-- --------------------------------2--------------------- -->
+        <div class="item" style="background-image: url(images/MOVIE\ 2.jpg);">
+            <div class="content">
+                <div class="name">Rampage</div>
+                <div class="dec">When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago.</div>
+                <button class="btn" onclick="location.href='videos/Movie2.mp4' ">TRAILER</button>
+            </div>
+        </div>
+              <!-- --------------------------------3--------------------- -->
+              <div class="item" style="background-image: url(images/MOVIE\ 3.jpg);">
+                <div class="content">
+                    <div class="name">Extraction</div>
+                    <div class="dec">Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's enlisted to rescue the kidnapped son of an imprisoned international crime lord.</div>
+                    <button class="btn" onclick="location.href='videos/Movie3.mp4' ">TRAILER</button>
+                </div>
+            </div>
+                  <!-- --------------------------------4--------------------- -->
+        <div class="item" style="background-image: url(images/MOVIE\ 4.jpg);">
+            <div class="content">
+                <div class="name">La casa de papel</div>
+                <div class="dec">An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</div>
+                <button class="btn" onclick="location.href='videos/Movie4.mp4' ">TRAILER</button>
+            </div>
+        </div>
+              <!-- --------------------------------5--------------------- -->
+              <div class="item" style="background-image: url(images/MOVIE\ 5.jpg);">
+                <div class="content">
+                    <div class="name">Dracula Untold</div>
+                    <div class="dec">young prince Vlad Tepes must become a monster feared by his own people in order to obtain the power needed to protect his own family, and the families of his kingdom.</div>
+                    <button class="btn" onclick="location.href='videos/Movie5.mp4' ">TRAILER</button>
+                </div>
+            </div>
+                  <!-- --------------------------------6--------------------- -->
+        <div class="item" style="background-image: url(images/MOVIE\ 6.jpg);">
+            <div class="content">
+                <div class="name">The Last of Us</div>
+                <div class="dec">After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.</div>
+                <button class="btn" onclick="location.href='videos/Movie6.mp4' ">TRAILER</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="move-btn">
+      <button class="prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></button>
+      <button class="next"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+    </div>
+    </section>
+        <!-- -----------------------------------  Log in pup-up ----------------------------------- -->
+        <div class="wrapper">
+          <div class="form-box-login">
+            <span class="icon-colse"><ion-icon name="close-outline"></ion-icon></span>
+            <h2>Log In</h2>
+            <form action="#">
+              <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
+              </div>
+              <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+              </div>
+              <div class="remember">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#">forget password ? </a>
+              </div>
+              <button type="submit" class="log-btn">Login</button>
+              <div class="login-register">
+              <p>Don't have account? &#160<a href="#" class="register-link">Register</a></p>
+              </div>
+            </form>
+          </div>
+        <!-- -----------------------------------  Register pup-up ----------------------------------- -->
+          <div class="form-box-register">
+            <span class="icon-colse"><ion-icon name="close-outline"></ion-icon></span>
+            <h2>Register</h2>
+            <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox">agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="log-btn">Register</button>
+            <div class="login-register">
+                <p>I have account &#160<a href="#" class="login-link">Log in</a></p>
+            </div>
+            </form>
+          </div>
+        </div>
+        <!-- -----------------------------------  Trailers ----------------------------------- -->
+    </body>
+
+    
+
+    <script src="main/app.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
